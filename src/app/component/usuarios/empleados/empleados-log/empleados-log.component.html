@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="separa"></div>
+  <div class="separa"></div>
+  <div class="formulario animate__animated animate__fadeInUp animate__delay-0.5s">
+    <mat-tab-group>
+      <mat-tab id="login" label="Inicio de sesión">
+        <form class="hola">
+          <label class="font_campo" for="">Email:</label>
+          <div class="campo_form">
+            <mat-form-field class="full-width">
+              <input [(ngModel)]="email" name="email" matInput placeholder="Email" required>
+            </mat-form-field>
+          </div>
+          <label class="font_campo" for="">Contraseña</label>
+
+          <div class="campo_form">
+            <mat-form-field class="full-width">
+              <input [(ngModel)]="password" name="password" matInput type="password" placeholder="Contraseña" required>
+            </mat-form-field>
+          </div>
+
+          <button mat-raised-button color="primary" class="boton" (click)="logeo()">Iniciar sesión</button>
+        </form>
+      </mat-tab>
+
+    </mat-tab-group>
+  </div>
+  <div class="separa"></div>
+  <div class="separa"></div>
+</body>
+
+</html>
